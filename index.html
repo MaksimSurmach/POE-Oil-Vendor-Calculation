@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <title>Hello, world!</title>
+  </head>
+	<style>
+		.oilimg {
+    max-height: 40px;
+		}
+		.input-group-text{
+			background-color: white !important;
+     	border: none !important;
+
+		}
+		.input{
+			margin-top: 8px;
+		}
+		.list-group-item{
+			padding-top: 5px !important;
+			padding-bottom: 5px  !important;
+		}
+		body{
+			    background-color: #111;
+		}
+	</style>
+  <body>
+		<h1 class="display-3 text-white"  >Oil vendor calculation</h1>
+		<div class="container">
+  	<div class="row">
+			<ul class="list-group list-group-flush bg-dark">
+				 <li class="list-group-item "><form>
+					 <div class=" row">
+						 <div class="input-group col">
+							 <div class="input-group-prepend">
+							 <span class="input-group-text" id="basic-addon1">
+									<img src="img/clear_oil.png" class="oilimg" alt="Clear Oil"  >
+							 </span>
+						 </div>
+							 <input type="text" class="form-control input Clear" placeholder="Clear Oil">
+						 </div>
+						 <div class="col">
+
+						 </div>
+					 </div>
+				 </form>
+			 </li>
+				  <li class="list-group-item">
+						<form>
+						  <div class=" row">
+						    <div class="input-group col">
+									<div class="input-group-prepend">
+										<span class="input-group-text" id="basic-addon1">
+							    <img src="img/sepia_oil.png" class="oilimg" alt="Sepia Oil"  ></span>
+							  </div>
+						      <input type="text" class="form-control input Sepia" placeholder="Sepia Oil">
+						    </div>
+						    <div class="col">
+						      <input id="resultSepia" class="form-control input" type="text" placeholder="Total Sepia Oil" readonly>
+						    </div>
+						  </div>
+						</form>
+					</li>
+			  <li class="list-group-item">
+					<form>
+						<div class=" row">
+							<div class="input-group col">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">
+								<img src="img/amber_oil.png" class="oilimg" alt="Amber Oil"  ></span>
+							</div>
+								<input type="text" class="form-control input Amber" placeholder="Amber Oil">
+							</div>
+							<div class="col">
+								<input id="resultAmber" class="form-control input" type="text" placeholder="Total Amber Oil" readonly>
+							</div>
+						</div>
+					</form>
+				</li>
+			  <li class="list-group-item">
+					<form>
+						<div class=" row">
+							<div class="input-group col">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">
+								<img src="img/verdant_oil.png" class="oilimg" alt="Verdant Oil"  ></span>
+							</div>
+								<input type="text" class="form-control input Verdant" placeholder="Verdant Oil">
+							</div>
+							<div class="col">
+								<input id="resultVerdant" class="form-control input" type="text" placeholder="Total Verdant Oil" readonly>
+							</div>
+						</div>
+					</form>
+				</li>
+			  <li class="list-group-item">
+					<form>
+						<div class=" row">
+							<div class="input-group col">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">
+								<img src="img/teal_oil.png" class="oilimg" alt="Teal Oil"  ></span>
+							</div>
+								<input type="text" class="form-control input Teal" placeholder="Teal Oil">
+							</div>
+							<div class="col">
+								<input id="resultTeal" class="form-control input" type="text" placeholder="Total Teal Oil" readonly>
+							</div>
+						</div>
+					</form>
+				</li>
+			  <li class="list-group-item">
+					<form>
+						<div class=" row">
+							<div class="input-group col">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">
+								<img src="img/azure_oil.png" class="oilimg" alt="Azure Oil"  ></span>
+							</div>
+								<input type="text" class="form-control input Azure" placeholder="Azure Oil">
+							</div>
+							<div class="col">
+								<input  id="resultAzure" class="form-control input" type="text" placeholder="Total Azure Oil" readonly>
+							</div>
+						</div>
+					</form>
+				</li>
+				<li class="list-group-item">
+					<form>
+						<div class=" row">
+							<div class="input-group col">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">
+								<img src="img/violet_oil.png" class="oilimg" alt="Violet Oil"  ></span>
+							</div>
+								<input type="text" class="form-control input Violet" placeholder="Violet Oil">
+							</div>
+							<div class="col">
+								<input id="resultViolet" class="form-control input" type="text" placeholder="Total Violet Oil" readonly>
+							</div>
+						</div>
+					</form>
+				</li>
+			 <li class="list-group-item"><form>
+				 <div class=" row">
+					 <div class="input-group col">
+						 <div class="input-group-prepend">
+							 <span class="input-group-text" id="basic-addon1">
+						 <img src="img/crimson_oil.png" class="oilimg" alt="Crimson Oil"  ></span>
+					 </div>
+						 <input type="text" class="form-control input Crimson" placeholder="Crimson Oil">
+					 </div>
+					 <div class="col">
+						 <input id="resultCrimson" class="form-control input" type="text" placeholder="Total Crimson Oil" readonly>
+					 </div>
+				 </div>
+			 </form>
+		 </li>
+			 <li class="list-group-item"><form>
+				 <div class=" row">
+					 <div class="input-group col">
+						 <div class="input-group-prepend">
+							 <span class="input-group-text" id="basic-addon1">
+						 <img src="img/black_oil.png" class="oilimg" alt="Black Oil"  ></span>
+					 </div>
+						 <input type="text" class="form-control input Black" placeholder="Black Oil">
+					 </div>
+					 <div class="col">
+						 <input id="resultBlack" class="form-control input" type="text" placeholder="Total Black Oil" readonly>
+					 </div>
+				 </div>
+			 </form>
+		 </li>
+			 <li class="list-group-item"><form>
+				 <div class=" row">
+					 <div class="input-group col">
+						 <div class="input-group-prepend">
+							 <span class="input-group-text" id="basic-addon1">
+						 <img src="img/opalescent_oil.png" class="oilimg" alt="Opalescent Oil"  ></span>
+					 </div>
+						 <input type="text" class="form-control input Opalescent" placeholder="Opalescent Oil">
+					 </div>
+					 <div class="col">
+						 <input id="resultOpalescent" class="form-control input" type="text" placeholder="Total Opalescent Oil" readonly>
+					 </div>
+				 </div>
+			 </form>
+		 </li>
+			 <li class="list-group-item"><form>
+				 <div class=" row">
+					 <div class="input-group col">
+						 <div class="input-group-prepend">
+							 <span class="input-group-text" id="basic-addon1">
+						 <img src="img/silver_oil.png" class="oilimg" alt="Silver Oil"  ></span>
+					 </div>
+						 <input type="text" class="form-control input Silver" placeholder="Silver Oil">
+					 </div>
+					 <div class="col">
+						 <input id="resultSilver" class="form-control input" type="text" placeholder="Total Silver Oil" readonly>
+					 </div>
+				 </div>
+			 </form>
+		 </li>
+			 <li class="list-group-item"><form>
+				 <div class=" row">
+					 <div class="input-group col">
+						 <div class="input-group-prepend">
+							 <span class="input-group-text" id="basic-addon1">
+						 <img src="img/golden_oil.png" class="oilimg" alt="Golden Oil"  ></span>
+					 </div>
+						 <input type="text" class="form-control input Golden" placeholder="Golden Oil">
+					 </div>
+					 <div class="col">
+						 <input id="resultGolden" class="form-control input text-warning" type="text" placeholder="Total Golden Oil" readonly>
+					 </div>
+				 </div>
+			 </form>
+		 </li>
+			</ul>
+
+	  </div>
+		</div>
+		<script>
+				$(document).ready(function(){
+		var ClearIN, SepiaIN, AmberIN, VerdantIN, TealIN, AzureIN, VioletIN, CrimsonIN, BlackIN, OpalescentIN, SilverIN, GoldenIN;
+		   $(".Clear").keyup(function(){
+		          ClearIN = +$(".Clear").val();
+		   });
+		    $(".input").on('input', function () {
+		    ClearIN = +$(".Clear").val();
+		    SepiaIN = +$(".Sepia").val();
+		    AmberIN = +$(".Amber").val();
+		    VerdantIN = +$(".Verdant").val();
+		    TealIN = +$(".Teal").val();
+		    AzureIN = +$(".Azure").val();
+		    VioletIN = +$(".Violet").val();
+		    CrimsonIN = +$(".Crimson").val();
+		    BlackIN = +$(".Black").val();
+		    OpalescentIN = +$(".Opalescent").val();
+		    SilverIN = +$(".Silver").val();
+		    GoldenIN = +$(".Golden").val();
+		       var Sepia = ClearIN/3;
+		   $("#resultSepia").val(Math.trunc(Sepia));
+		   			var Amber = (SepiaIN+Sepia)/3;
+		   $("#resultAmber").val(Math.trunc(Amber));
+		   var Verdant = (AmberIN+Amber)/3;
+		   $("#resultVerdant").val(Math.trunc(Verdant));
+		   var Teal  = (VerdantIN+Verdant)/3;
+		   $("#resultTeal").val(Math.trunc(Teal));
+		   var Azure   = (TealIN+Teal)/3;
+		   $("#resultAzure").val(Math.trunc(Azure));
+		   var Violet = (AzureIN+Azure)/3;
+		   $("#resultViolet").val(Math.trunc(Violet));
+		   var Crimson  = (VioletIN+Violet)/3;
+		   $("#resultCrimson").val(Math.trunc(Crimson));
+		   var Black = (CrimsonIN+Crimson)/3;
+		   $("#resultBlack").val(Math.trunc(Black));
+		   var Opalescent = (BlackIN+Black)/3;
+		   $("#resultOpalescent").val(Math.trunc(Opalescent));
+		   var Silver = (OpalescentIN+Opalescent)/3;
+		   $("#resultSilver").val(Math.trunc(Silver));
+		   var Golden  = (SilverIN+Silver)/3;
+		   $("#resultGolden").val(Math.trunc(Golden));
+		    });
+
+		});
+		</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
